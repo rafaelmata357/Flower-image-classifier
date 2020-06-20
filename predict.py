@@ -3,7 +3,7 @@
 #
 # PROGRAMMER:    Rafael Mata M.
 # DATE CREATED:  29 May 2020                                
-# REVISED DATE:  31 May 2020
+# REVISED DATE:  20 June 2020
 # PURPOSE: Use the train model to predict the class (flower type) using inference
 #
 #   Usage:
