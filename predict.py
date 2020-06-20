@@ -61,13 +61,13 @@ def sanity_check(ps, cat_to_names, idx_names):
  
     
     flower = class_names[np.argmax(ps)]    #Get the flower  name with max probability 
-    print('-----'*19)
+    print('-----'*20)
     print('Predictired Flower Name: {}'.format(color(flower)))
-    print('-----'*19)
+    print('-----'*20)
     print('Top {} Classes List {} '.format(color((len(class_names))), color(class_names)))
-    print('-----'*19)
+    print('-----'*20)
     print('Classes probabilities: {}'.format(color(ps)))
-    print('-----'*19)                                       
+    print('-----'*20)                                       
     
 
     return None  
