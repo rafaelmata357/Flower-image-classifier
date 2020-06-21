@@ -72,6 +72,23 @@ def sanity_check(ps, cat_to_names, idx_names):
 
     return None  
 
+def sanity_check_image(imagepath, ps, cat_to_names, idx_names):
+    ''' Function for checking the model sanity, display the image with
+        the top probabilities in a chart.
+        
+        Params:
+        
+      
+        ps           : probability classes Tensor
+        cat_to_names : dictionary with the class to flower names map
+        idx_names    : list with the top 5 classes index
+      
+        
+        
+        Returns : None
+    '''
+    pass
+
 def predict(image_path, checkpoint, gpu, topk, msg=True):
     ''' Predict the class (or classes) of an image using a trained deep learning model.
     
