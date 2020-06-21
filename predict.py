@@ -147,4 +147,6 @@ if __name__ == '__main__':
     
     #Check th
     sanity_check(prob, cat_to_name, idx_names)
+
+    imshow(process_image(image_path))
     
