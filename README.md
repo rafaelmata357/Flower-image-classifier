@@ -24,12 +24,12 @@ to the dataset repository to get more detail.
 
 # Files in the repository
 
-- get_train_args.py   : script to get the command line arguments for the train program     
-- predict.py          : program to predict the flower image    
-- cat_to_name.json    : json file to map the classes with the flower names 
-- get_predict_args.py : script to get the command line argumens for the predict program
-- train.py            : program to train, validate and test the classifier
-- utils.py            : utility functions for train and predict apps.
+- **get_train_args.py**   : script to get the command line arguments for the train program     
+- **predict.py**          : program to predict the flower image    
+- **cat_to_name.json**    : json file to map the classes with the flower names 
+- **get_predict_args.py** : script to get the command line argumens for the predict program
+- **train.py**            : program to train, validate and test the classifier
+- **utils.py**            : utility functions for train and predict apps.
 
 # Install
 Clone the repository to the local machine
@@ -56,15 +56,37 @@ a learning rate of 0.001, 20% dropout probability, 30 epochs and GPU usage, exec
 
 In addition to get help execute:
 
-`$ python covid_track_graph.py -h `
+`$ python train.py -h `
 
-# Output Example:
+The **predict** app has the following arguments:
+   
+     1. Data image path                           --data_dir with default value 'flowers'
+     2. checkpoint path                           --checkpoint
+     3. Top K probabilities                       --top_k
+     4. Categroy Names                            --category_names
+     5. GPU to specified gpu resources use        --gpu with default value 'y'
 
-![Example](https://github.com/rafaelmata357/Track-and-graph-covid-data/blob/master/example.png)
+Example to use the train classifier and predict a flower image, showing the top 3 possible flowers and no GPU usage:
 
-# Terms of use:
+```$ python predict.py flower checkpoint.pth --top_k 3 --category_names cat_to_name.json --gpu n```
 
-This script is made only to show how to read a dataset repository, process and graph using python, follow https://github.com/CSSEGISandData/COVID-19 regarding the dataset uses. 
+In addition to get help execute:
+
+`$ python predict.py -h `
+
+# Python version:
+This app uses **Python 3.8.1**
+
+#Libraries used:
+
+- time 
+- numpy 
+- json
+- PIL 
+- os
+- torch
+- torch
+- torchvision
 
 # License:
 
