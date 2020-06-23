@@ -77,7 +77,7 @@ In addition to get help execute:
 # Python version:
 This app uses **Python 3.8.1**
 
-#Libraries used:
+# Libraries used:
 
 - time 
 - numpy 
