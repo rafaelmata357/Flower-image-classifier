@@ -74,6 +74,10 @@ In addition to get help execute:
 
 `$ python predict.py -h `
 
+Ouput example:
+
+![Example](https://github.com/rafaelmata357/Flower-image-classifier/blob/master/output.png)
+
 # Python version:
 This app uses **Python 3.8.1**
 
